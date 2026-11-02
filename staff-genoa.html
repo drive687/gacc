@@ -57,7 +57,7 @@
         <div class="dossier-body">
           <figure class="dossier-photo">
             <img src="./assets/staff-genoa.jpg" alt="新热那亚 证件照" />
-            <figcaption>证件照 · 影像采集自 GACC 档案系统</figcaption>
+            <figcaption>一寸证件照</figcaption>
           </figure>
           <div class="dossier-fields">
             <dl>
@@ -73,7 +73,9 @@
               <dd>情报局 · 全球监测与战略研判司司长</dd>
               <dt>擅长</dt>
               <dd>信息收集与汇总、监听、网络技术</dd>
-              <dt>躯体改造</dt>
+              <dt>权限等级</dt>
+              <dd>Lv.5 · 最高机密</dd>
+              <dt>行动报告</dt>
               <dd><span class="no-access">⚠️ 没有访问权限</span></dd>
             </dl>
           </div>
@@ -103,10 +105,30 @@
           </li>
         </ol>
 
+        <div class="seal-center" aria-hidden="true">
+          <svg viewBox="0 0 120 120">
+            <defs>
+              <path id="sealArcGenoa" d="M60,60 m-41,0 a41,41 0 1,1 82,0 a41,41 0 1,1 -82,0"/>
+            </defs>
+            <circle cx="60" cy="60" r="57" fill="none" stroke="#9c2f26" stroke-width="3.5"/>
+            <circle cx="60" cy="60" r="44" fill="none" stroke="#9c2f26" stroke-width="2"/>
+            <text fill="#9c2f26" font-size="11.5" letter-spacing="3.2" font-family="serif">
+              <textPath href="#sealArcGenoa" startOffset="0%">GACC · 全球异常收容指挥部 · 机密档案 · GACC · 全球异常收容指挥部</textPath>
+            </text>
+            <text x="60" y="56" text-anchor="middle" fill="#9c2f26" font-size="22" font-family="serif" font-weight="800">GACC</text>
+            <text x="60" y="80" text-anchor="middle" fill="#9c2f26" font-size="9">★ 机密 ★</text>
+          </svg>
+        </div>
+
         <h2 class="dossier-section-title">备注</h2>
         <p>面部显示器在未使用时向上折叠收起；需定期充电；具备高抗冲击性。因无明显生理体征，档案性别栏获准填「无」。对下属的严谨性要求很高。</p>
 
-        <div class="dossier-stamp">机密</div>
+        <div class="seal-footer">
+          <div class="seal-rect">
+            <div class="seal-title">GACC 全球异常收容指挥部</div>
+            <div class="seal-sub">最高机密 · 授权签发 · CONFIDENTIAL</div>
+          </div>
+        </div>
       </div>
       <a class="dossier-back" href="./staff.html">← 返回职员档案</a>
     </article>
