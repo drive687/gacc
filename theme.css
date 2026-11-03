@@ -916,6 +916,30 @@ figcaption {
   margin-bottom: 0.4rem;
 }
 
+/* 行动报告可点击链接 */
+.act-link {
+  color: var(--paper-stamp);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px dashed var(--paper-stamp);
+  transition: opacity 0.15s ease;
+}
+.act-link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+.act-link .act-link-arrow {
+  display: inline-block;
+  margin-left: 0.25rem;
+}
+/* 行动报告字段表更宽的键列 */
+.act-fields dl {
+  grid-template-columns: 6.2rem minmax(0, 1fr);
+}
+.act-fields dt {
+  padding-top: 0.35rem;
+}
+
 /* 访问权限烙印 */
 .no-access {
   display: inline-flex;
