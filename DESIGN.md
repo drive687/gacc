@@ -1,0 +1,43 @@
+# GACC 档案库 — 设计契约
+
+## 目标
+把 9 篇 SCP 风格世界观资料整理成一个可点击查阅的多页面静态档案库网站。全站统一挂 GACC 徽章（页头 + favicon）；「对象档案（选编）」整篇设为受限、显示「禁止访问」不展示正文；去除所有「（已填/上限）」式的编制人数占位、保留职责结构；预留「职员档案」导航入口。
+
+## 视觉方向
+SCP 档案库 / 机密文件风：米白纸底、红章黑字、等宽字段、密级标签、涂抹条（██）。克制、整洁、公文腔；不花哨、不做苹果式极简、不做广告风。恐怖感来自「整洁」，而非装饰。
+
+## 设计令牌（Token）
+- 主色（红章）：#9c1c1c；深红：#7a1414；印章红：#b3261e
+- 背景（米白纸）：#f4f0e6；表面（白卡/白页头）：#ffffff
+- 正文墨色：#1a1a1a；次级：#6f6a5e；边框：#d9d2c2
+- 正文字体：系统无衬线；标题：宋体/衬线；字段与编号：等宽
+- 涂抹条：#101010
+- 其余见 theme.css（唯一 Token 事实源）
+
+## 共享壳层
+- 顶部栏：GACC 徽章 + 站点名 + 密级标签「机密 CONFIDENTIAL」
+- 导航：首页 / 00–07 各档案 / 对象档案 / 职员档案
+- 页脚：会训 + 落款「GACC 档案库 · 仅供查阅」
+- 每页：skip-link、语义 landmark（header/nav/main/footer）、徽章作为 favicon
+
+## 页面
+- index.html — 首页目录（唯一入口，data-entry="true"）
+- overview.html — 00 设定总纲
+- worldview.html — 01 世界观背景
+- command.html — 02 GACC 总署
+- security.html — 03 安全部门
+- intelligence.html — 04 情报局（摩涅莫绪涅之眼）
+- research.html — 05 科研部（图特密藏所，已撤销）
+- ethics.html — 06 伦理道德委员会
+- equipment.html — 07 安全部门制式装备
+- objects.html — 对象档案（受限，禁止访问）
+- staff.html — 职员档案（预留，即将开放）
+
+## 状态与交互
+- objects.html 呈现「禁止访问」态；staff.html 呈现「即将开放」态（data-state="empty"）。
+- 全部为静态多页导航，无运行时依赖、无表单、无后台。
+
+## 资产与来源
+- 徽章：assets/logo.png（用户提供，GACC 徽章）
+- 示意图 11 张：assets/*.jpg（来自 9 篇源 docx）
+- 源文本：9 篇 .docx（由腾讯文档世界观资料导出）

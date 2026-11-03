@@ -891,6 +891,31 @@ figcaption {
   line-height: 1.75;
 }
 
+/* 第三人称报告叙述段 */
+.dossier-narrative p {
+  margin: 0 0 0.95rem;
+  font-size: 0.95rem;
+  line-height: 1.85;
+  text-align: justify;
+}
+.dossier-narrative p:last-child {
+  margin-bottom: 0;
+}
+
+/* 机密医疗档案 */
+.med-ref {
+  margin: 0 0 0.7rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--paper-stamp);
+}
+.med-block {
+  border: 1px dashed var(--paper-line);
+  padding: 0.9rem 1.1rem 0.85rem;
+  margin-bottom: 0.4rem;
+}
+
 /* 访问权限烙印 */
 .no-access {
   display: inline-flex;
