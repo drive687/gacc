@@ -523,6 +523,12 @@ figcaption {
   color: var(--color-border);
 }
 
+/* 对象档案（深色页）内的行动报告链接提亮，与重点红一致 */
+body[data-page-id="objects"] .act-link {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
 /* ── 禁止访问 / 即将开放 ─────────────── */
 .restricted,
 .placeholder-page {
