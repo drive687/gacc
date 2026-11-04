@@ -446,6 +446,83 @@ figcaption {
   opacity: 0.75;
 }
 
+/* ── 对象档案（选编）字段卷宗 ─────────────── */
+.object-fields {
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-primary);
+  background: var(--color-surface);
+  border-radius: var(--radius-sm);
+  padding: 0.9rem 1.1rem;
+  margin: 0.9rem 0 1.4rem;
+}
+
+.object-fields dl {
+  display: grid;
+  grid-template-columns: 3.6rem minmax(0, 1fr);
+  gap: 0.35rem 0.9rem;
+  margin: 0;
+}
+
+.object-fields dt {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
+  padding-top: 0.2rem;
+}
+
+.object-fields dd {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 0.96rem;
+  line-height: 1.65;
+  border-bottom: 1px dashed var(--color-border);
+  padding-bottom: 0.3rem;
+}
+
+.object-fields dd.mono {
+  letter-spacing: 0.04em;
+}
+
+.object-fields strong {
+  color: var(--color-primary);
+}
+
+/* ── 案卷翻页 ─────────────── */
+.object-pager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin: 2rem 0 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+.object-pager a {
+  color: var(--color-muted-text);
+  text-decoration: none;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0.4rem 0.8rem;
+  transition: color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+.object-pager a:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.object-pager a.pager-home {
+  color: var(--color-text);
+}
+.object-pager a.pager-home:hover {
+  color: var(--color-primary);
+}
+.object-pager span {
+  color: var(--color-border);
+}
+
 /* ── 禁止访问 / 即将开放 ─────────────── */
 .restricted,
 .placeholder-page {
