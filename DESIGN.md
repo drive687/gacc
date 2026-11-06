@@ -27,8 +27,8 @@ SCP 档案库 / 机密文件风：米白纸底、红章黑字、等宽字段、�
 - command.html — 02 GACC 总署
 - security.html — 03 安全部门
 - intelligence.html — 04 情报局（摩涅莫绪涅之眼）
-- research.html — 05 科研部（图特密藏所，已撤销）
-- ethics.html — 06 伦理道德委员会
+- research.html — 05 科研部（图特密藏所）
+- ethics.html — 06 安全委员会
 - equipment.html — 07 安全部门制式装备
 - objects.html — 对象档案（原文选编六份 + 补遗三份，均已解档；案卷目录指向九个子页）
 - obj-*.html — 九份对象案卷子页，每份一页，含上下案卷翻页；补遗三份（0712／利维坦-07／嗡鸣）录自职员行动报告，关键处附有对应行动报告跳转链接
