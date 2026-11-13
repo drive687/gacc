@@ -871,6 +871,14 @@ body[data-page-id="objects"] .act-link {
   align-items: start;
 }
 
+.dossier-body.no-photo {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.record-link {
+  margin-top: 1.6rem;
+}
+
 .dossier-photo {
   margin: 0;
 }
